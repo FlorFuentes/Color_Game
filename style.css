@@ -1,0 +1,60 @@
+.square {
+  float: left;
+  width: 30%;
+  height: 0%;
+  padding-bottom: 30%;
+  background: aqua;
+  margin: 1.66%;
+  border-radius: 10%;
+  transition: 0.6s;
+}
+#container {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #232323;
+  overflow: hidden;
+  text-align: center;
+}
+body {
+  background-color: #232323;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  color: blanchedalmond;
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: steelblue;
+}
+#stripe {
+  background-color: white;
+  height: 30px;
+  text-align: center;
+}
+.selected {
+  background-color: transparent;
+}
+button {
+  border: none;
+  background-color: inherit;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: rgb(73, 70, 70);
+  letter-spacing: 1px;
+  font-size: inherit;
+}
+button:hover {
+  color: #232323;
+  background-color: rgba(17, 18, 18, 0.445);
+}
+#colorDisplay {
+  display: block;
+  font-size: 200%;
+}
+#message {
+  display: inline-block;
+  width: 20%;
+  color: black;
+}
