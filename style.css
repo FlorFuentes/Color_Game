@@ -1,60 +1,89 @@
-.square {
-  float: left;
-  width: 30%;
-  height: 0%;
-  padding-bottom: 30%;
-  background: aqua;
-  margin: 1.66%;
-  border-radius: 10%;
-  transition: 0.6s;
-}
-#container {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #232323;
-  overflow: hidden;
-  text-align: center;
-}
 body {
   background-color: #232323;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 h1 {
   text-align: center;
   color: blanchedalmond;
   margin: 0;
+  padding: 20px 0;
   font-weight: normal;
   text-transform: uppercase;
   background-color: steelblue;
 }
+
+
 #stripe {
   background-color: white;
-  height: 30px;
   text-align: center;
+  padding: 10px 0;
 }
-.selected {
-  background-color: transparent;
-}
+
 button {
   border: none;
   background-color: inherit;
   text-transform: uppercase;
-  height: 100%;
+  padding: 10px 20px;
   font-weight: 700;
   color: rgb(73, 70, 70);
-  letter-spacing: 1px;
-  font-size: inherit;
+  font-size: 1em;
+  cursor: pointer;
 }
+
 button:hover {
   color: #232323;
   background-color: rgba(17, 18, 18, 0.445);
 }
+
 #colorDisplay {
-  display: block;
   font-size: 200%;
+  display: block;
 }
+
 #message {
-  display: inline-block;
-  width: 20%;
+  width: 100%;
   color: black;
+  padding: 10px 0;
+}
+
+#container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.square {
+  flex: 1 1 30%;
+  margin: 1.66%;
+  border-radius: 10%;
+  transition: 0.6s;
+  position: relative;
+  overflow: hidden;
+}
+
+.square:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+@media (max-width: 600px) {
+  .square {
+    flex: 1 1 46%;
+  }
+
+  button {
+    font-size: 0.8em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
 }
